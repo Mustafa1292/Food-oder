@@ -1,0 +1,96 @@
+.inputs {
+  /* margin: 40px; */
+  margin-top: 10px;
+  margin-left: 40%;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid grey;
+  height: 40px;
+  width: 300px;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 30rem;
+  z-index: 10;
+  position: fixed;
+  top: 20vh;
+  left: calc(50% - 15rem);
+  font-size: 40px;
+  color: #1864ab;
+  background-color: #e6fcf5;
+  height: 180px;
+}
+
+.btn {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 90px;
+  border: 0.1px solid #1864ab;
+  border-radius: 10%;
+  height: 50px;
+  background-color: #1864ab;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.logbtn {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 0px;
+  border: 0.1px solid #1864ab;
+  border-radius: 10%;
+  height: 50px;
+  background-color: #1864ab;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 19px;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+}
+
+.amounts {
+  margin-left: 37%;
+  margin-bottom: 15px;
+  font-size: 23px;
+  font-weight: bold;
+  color: #1864ab;
+}
+
+@media all and (max-width: 675px) {
+  .amounts {
+    font-size: 20px;
+  }
+  .modal {
+    font-size: 20px;
+    height: 80px;
+    width: 15rem;
+  }
+  .btn {
+    font-size: 10px;
+    margin-top: 1px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .inputs {
+    width: 200px;
+  }
+}

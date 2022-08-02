@@ -1,0 +1,43 @@
+.links {
+  text-decoration: none;
+  color: black;
+  left: 200px;
+  /* margin-left: 1px; */
+  padding: 7px;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.links:hover {
+  cursor: pointer;
+  text-shadow: 0.5px 0.5px grey;
+  border: 3px solid whitesmoke;
+}
+
+.MenuItem {
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+.Navcontainer {
+  margin-left: 50px;
+  margin-top: 35px;
+  position: absolute;
+  z-index: 2;
+}
+
+@media screen and (max-width: 675px) {
+  a.links {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    right: 100px;
+  }
+  .MenuItem {
+    margin-right: 9px;
+  }
+  .Navcontainer {
+    margin-left: -35px;
+  }
+}
